@@ -1,3 +1,42 @@
+# About Me Website
+This is a SPA (Single page app) personal website made using [React.js](https://create-react-app.dev) and a [HTML5 UP](https://html5up.net) template.
+
+## Installation
+Clone this repo (replace ~/about-me with your desire local directory):
+```bash
+git clone https://github.com/vpiselli/about_me.git ~/about-me
+```
+
+Move to the React directory
+```bash
+cd ~/about-me
+```
+
+Install the project dependencies with Yarn (or NPM)
+```bash
+yarn
+```
+
+## Configuration
+Copy or rename .env.example to .env
+```bash
+cp .env.example .env
+```
+
+- Edit .env file with your website title, name, avatar and EmailJS credentials.
+- IMPORTANT: This app uses [EmailJS](https://emailjs.com) library to send "Contact Me" form information. You can read more about it in https://www.emailjs.com/docs/ or you can follow this excellent guide from [MailTrap.io](https://mailtrap.io): https://www.emailjs.com/docs/ to setup a custom email service.
+- You can also edit webpage favicon and logos located on the /public folder.
+
+
+## Run the app
+To run the project in development mode use:
+```bash
+yarn start
+```
+
+The rest of this document is the regular React README.md file
+
+----------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

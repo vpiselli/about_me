@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import Main from './Components/Main';
+import Footer from './Components/Footer';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	
+	useEffect(() => {
+		document.title = process.env.REACT_APP_TITLE;
+	}, []);
+
+	return (
+		<div id="wrapper">
+
+			<Main />
+			<Footer />
+
+		</div>
+		
+	);
 }
 
 export default App;
